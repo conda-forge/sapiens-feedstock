@@ -1,5 +1,5 @@
 {% set name = "sapiens" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41a8242da8ced4c4390ab6167950c6abb53ce84e3a7519282ccd680254d3119a
+  sha256: 81d5c9930b7eff8563c46ab82c70c44f5bf28ccfc77103df2b10ec92382fe87f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - pandas
-    - fairseq ==0.10.2
+    - fairseq
 
 test:
   imports:
