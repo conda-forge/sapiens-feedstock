@@ -1,11 +1,11 @@
-About sapiens
-=============
+About sapiens-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sapiens-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Merck/Sapiens
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sapiens-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sapiens is a human antibody language model based on BERT
 
