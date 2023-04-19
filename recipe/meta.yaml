@@ -1,5 +1,5 @@
 {% set name = "sapiens" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cec9c0cbc2fb04d27a61ed6468da402d11bc01e52cd74c55d600cbba6271324c
+  sha256: 805e620398078fa0ea08bbce5493e56acf42653c9f08908a7bcbaa7553daa00b
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/Merck/Sapiens
-  summary: 'Sapiens is a human antibody language model based on BERT'
+  summary: Sapiens is a human antibody language model based on BERT
   description: |
     Sapiens is a human antibody language model based on BERT. Sapiens is trained on antibodies from the Observed Antibody Space (OAS).
   license: MIT
