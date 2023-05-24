@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/Merck/Sapiens
-  summary: 'Sapiens is a human antibody language model based on BERT'
+  summary: Sapiens is a human antibody language model based on BERT
   description: |
     Sapiens is a human antibody language model based on BERT. Sapiens is trained on antibodies from the Observed Antibody Space (OAS).
   license: MIT
