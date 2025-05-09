@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3523f7de49362bc908034a8e71f4e30c68a866234c360dcb66cc2b212f8ca6eb
 
 build:
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pandas
     - fairseq ==0.12.3
 
@@ -28,6 +28,7 @@ test:
     - sapiens
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Merck/Sapiens
