@@ -1,5 +1,5 @@
 {% set name = "sapiens" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 805e620398078fa0ea08bbce5493e56acf42653c9f08908a7bcbaa7553daa00b
+  sha256: 3523f7de49362bc908034a8e71f4e30c68a866234c360dcb66cc2b212f8ca6eb
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
