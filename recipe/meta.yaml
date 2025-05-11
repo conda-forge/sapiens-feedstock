@@ -21,7 +21,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - pandas
-    - fairseq ==0.12.3
+    - pytorch
+    - transformers
 
 test:
   imports:
